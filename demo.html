@@ -1,0 +1,280 @@
+<html>
+<header>
+    <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script>
+        var foo = 'bar'
+        $(function(){
+            console.log(foo)
+
+
+            $("#btn").on("click", function(){
+                console.log("btn click")
+                $(this).toggleClass("pt-on")
+            })
+        })
+
+    </script>
+
+</header>
+
+<body>
+    <h3>布局修炼手册</h3>
+    <div class="bar"></div>
+    <div class="tri"></div>
+    <div class="box">
+        <div class="ele k50"></div>
+        <div class="ele k20"></div>
+        <div class="ele k30"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+        <div class="ele k50"></div>
+        <div class="ele k10"></div>
+        <div class="ele k30"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+        <div class="ele k50"></div>
+        <div class="ele k20"></div>
+        <div class="ele k30"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+        <div class="ele k50"></div>
+        <div class="ele k10"></div>
+        <div class="ele k30"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+        <div class="ele k50"></div>
+        <div class="ele k20"></div>
+        <div class="ele k30"></div>
+        <div class="ele k50"></div>
+        <div class="ele k10"></div>
+        <div class="ele k30"></div>
+        <div class="ele k10"></div>
+        <div class="ele k40"></div>
+        <div class="ele k10"></div>
+    </div>
+    <div class="btn-box">
+        <div id="btn" class="pt">
+        </div>
+        <div class="pt-text">卍</div>
+    </div>
+
+    <div class="flow-box">
+        <div class="level">
+            <div class="flow">keep out keep out keep out</div>
+        </div>
+
+        <div class="level-2">
+            <div class="spin">keep alive keep alive keep alive</div>
+        </div>
+    </div>
+
+</body>
+
+
+<style type="text/css">
+
+body{
+    margin: 10px 20px;
+}
+
+.level{
+    position: relative;
+    left: 10%;
+    text-align: center;
+    flex-shrink: 0;
+    transform: rotate(-30deg);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    background: #090d00;
+    color: rgba(255,255,255,.25);
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+}
+
+.level-2{
+    position: relative;
+    left: 10%;
+    text-align: center;
+    flex-shrink: 0;
+    transform: rotate(30deg);
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+
+    background: #090d00;
+    color: rgba(255,255,255,.25);
+    border: 4px double rgba(255,255,255,.25);
+    border-width: 4px 0;
+}
+
+/* 渐变背景,旋转角度45*/
+.spin{
+    padding: 0px 20px 0px 20px;
+    background-image: linear-gradient(
+        -45deg,
+        red 25%,
+        #fff 25%,#fff 50%
+        ,red 50%,
+        red 75%,
+        #fff 75%,#fff
+    );
+
+    background-size: 160px 160px;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    animation: an-flow 20s linear infinite;
+    will-change: contents;
+}
+
+.flow {
+    /* Clip Background Image */
+    background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png);
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    animation: aitf 60s linear infinite;
+}
+
+.pt{
+    cursor: pointer;
+    width: 80%;
+    height: 90px;
+    transform: scale(1,1);
+    background: #666;
+    transition: transform 0.6s ease-in;
+    will-change: transform;
+}
+
+.pt-on{
+    width: 80%;
+    height: 90px;
+    transform: scale(0.1,1);
+    background: #666;
+    transition: transform 0.6s ease-out;
+    will-change: transform;
+}
+
+.pt-text{
+    color: rebeccapurple;
+    font-weight: bold;
+    animation: an-spin 30s linear infinite;
+    will-change: transform;
+}
+
+.bar{
+    position: absolute;
+    left:10px;
+    background-color: #999;
+    border:1px solid red;
+    width:10px;
+    height:100px;
+    opacity: 0.3;
+}
+
+
+.ele {
+    flex-shrink: 0;
+    width: 10px;
+    background-color: #ddd;
+    box-shadow: 0px 0px 1px 1px #fff;
+}
+
+.box{
+    border:1px solid #999;
+    height: 100px;
+    width: 424px;
+    display:flex;
+    align-items:center;
+    overflow: hidden;
+}
+
+.btn-box{
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px auto;
+    border:1px solid #999;
+    height: 100px;
+    width: 800px;
+    display:flex;
+    align-items:center;
+    animation: shad 3s linear infinite;
+}
+
+.flow-box{
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    border:1px solid #999;
+    height: 100px;
+    width: 800px;
+    display:flex;
+    align-items:center;
+    animation: shad 3s linear infinite;
+}
+
+@keyframes aitf {
+    0% { background-position: 0%; }
+    100% { background-position: 100%; }
+}
+
+@keyframes an-flow {
+    0% { background-position: 100%; }
+    100% { background-position: 0%; }
+}
+
+@keyframes an-spin{
+    0%{transform: rotate(0deg)}
+    24.5%{transform: rotate(0deg)}
+    25%{transform: rotate(90deg)}
+    49.5%{transform: rotate(90deg)}
+    50%{transform: rotate(180deg)}
+    74.5%{transform: rotate(180deg)}
+    75%{transform: rotate(270deg)}
+    99.5%{transform: rotate(270deg)}
+    100%{transform: rotate(360deg)}
+}
+@keyframes shad{
+    50%{box-shadow: 0 0px 20px rgba(0, 0, 255, 0.8);}
+}
+
+.tri {
+    width: 60px; height: 60px;
+    background: linear-gradient(to top, #ddd, #ddd) no-repeat, linear-gradient(to right, #ddd, #ddd) no-repeat, linear-gradient(135deg, #fff, #fff 6px, hsla(0,0%,100%,0) 6px) no-repeat;
+    background-size: 60px 10px, 10px 60px, 60px 60px;
+    transform: rotate(-45deg);
+}
+
+
+.k10{
+    height: 10px;
+}
+.k20{
+    height: 20px;
+}
+.k30{
+    height: 30px;
+}
+.k40{
+    height: 40px;
+}
+.k50{
+    height: 50px;
+}
+
+
+</style>
+</body></html>

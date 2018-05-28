@@ -1,0 +1,85 @@
+
+
+
+
+<html>
+
+    <body>
+        <p>
+            <span class="first-level">
+                <span class="flow">卍最卍强卍封卍印卍</span>
+            </span>
+        </p>
+    </body>
+
+</html>
+
+
+<style type="text/css">
+    body {
+        background: #090d00;
+        color: rgba(255,255,255,.25);
+        text-align: center;
+    }
+
+    .first-level{
+        flex-shrink: 0;
+        position: absolute;
+        animation: fir 3s ease-in;
+        animation-fill-mode: forwards;
+        width:100%;
+    }
+
+    p {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: .5em;
+        display: flex;
+        justify-content:center;
+        flex-wrap: nowrap;
+
+        border: 4px double rgba(255,255,255,.25);
+        border-width: 4px 0;
+        padding: 1.5em 0em;
+        width: 10em;
+        margin: 10% auto;
+    }
+      .flow {
+            flex-shrink: 0;
+          font: sans-serif;
+          letter-spacing: 0;
+          padding: .25em 0 .325em;
+          text-shadow: 0 0 80px rgba(255,255,255,.5);
+    
+    /* Clip Background Image */
+    
+          background: url(http://f.cl.ly/items/010q3E1u3p2Q0j1L1S1o/animated_text_fill.png) repeat-y;
+          -webkit-background-clip: text;
+          background-clip: text;
+    
+    /* Animate Background Image */
+    
+          -webkit-text-fill-color: transparent;
+          -webkit-animation: aitf 20s linear infinite;
+          animation-direction: alternate;
+    
+    /* Activate hardware acceleration for smoother animations */
+    
+          -webkit-transform: translate3d(0,0,0);
+
+    }
+    
+    /* Animate Background Image */
+    
+    @keyframes fir{
+        0% { transform: rotate(0deg);left:0%;opacity: 0;}
+        100% { transform: rotate(30deg);left: 20%;opacity: 1;}
+    }
+
+    @-webkit-keyframes aitf {
+        0% { background-position: 0%; }
+        100% { background-position: 100%; }
+    }
+</style>
