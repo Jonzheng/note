@@ -52,7 +52,7 @@ select * from t_heart where file_id = '555' and user_id = 'Jon'
 --如果  多次提交  会触发主键冲突?(点击太快的处理,与取消点赞(coin不变)--status=0为取消点赞状态)
 --尝试insert 如果成功 coin+1,heart+1,self.coin +1?
 
-insert t_heart (reacord_id,user_id,file_id,master_id,status,now()) values()
+insert t_heart (record_id,user_id,file_id,master_id,status,now()) values()
 update t_record set heart = heart+1 where record_id = 114
 
 --[取消点赞]放在[...]
@@ -66,7 +66,7 @@ update t_record set heart = heart-1 where record_id = 114
 select rc.*,ht.user_id from t_record rc left join t_heart ht on (rc.record_id = ht.record_id) where rc.file_id = 555
 
 update t_record set heart = heart+1 where record_id = ?
-insert t_heart (reacord_id,user_id,file_id,master_id,status,now()) values()
+insert t_heart (record_id,user_id,file_id,master_id,status,now()) values()
 
 --签到
 update t_user set coin = (case when to_days(now()) == to_days(coin_date) then coin else coin + 1 end),coin_date = now() where user_id = 
@@ -74,6 +74,9 @@ update t_user set coin = (case when to_days(now()) == to_days(coin_date) then co
 
 ON DUPLICATE KEY UPDATE status = 1
 
-update t_heart set status = 0 where reacord_id = ? and user_id = ?
+update t_heart set status = 0 where record_id = ? and user_id = ?
 
 update t_user set nick_name = "Jon" where openid = 'ocVQY4-dF2m4IiYTTJZFo6k-NZbE'
+
+--本周排序--
+select th.user_id tud,tre.*,to_days(now()) - to_days(tre.c_date) dday FROM `t_record` tre left join `t_heart` th on (th.record_id = tre.record_id) order by case when to_days(now()) - to_days(tre.c_date) < 3 then 0 else 1 end,heart desc
