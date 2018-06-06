@@ -74,6 +74,9 @@ update t_user set coin = (case when to_days(now()) == to_days(coin_date) then co
 
 ON DUPLICATE KEY UPDATE status = 1
 
-update t_heart set status = 0 where reacord_id = ? and user_id = ?
+update t_heart set status = 0 where record_id = ? and user_id = ?
 
 update t_user set nick_name = "Jon" where openid = 'ocVQY4-dF2m4IiYTTJZFo6k-NZbE'
+
+--本周排序--
+select th.user_id tud,tre.*,to_days(now()) - to_days(tre.c_date) dday FROM `t_record` tre left join `t_heart` th on (th.record_id = tre.record_id) order by case when to_days(now()) - to_days(tre.c_date) < 3 then 0 else 1 end,heart desc

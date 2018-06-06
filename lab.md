@@ -3,7 +3,7 @@
 ***
 
 ###实验室成员:
->labomem No.001:mad scientist Jon·Known 为了隐藏身份.No
+>labomem No.001:mad scientist Jon·Known .No
 >labomem No.003:tuki tuishouda
 
 ###实验资源:
