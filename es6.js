@@ -7,6 +7,9 @@ window.onload=function(){}
 
 //数组方法
 arr = [1,2,3,4,5,6]
+//排序
+arr = [{"age":23},{"age":21},{"age":15},{"age":21},{"age":8}]
+arr.sort((a,b)=> {return a.age - b.age}) //顺序
 
 arr.includes(5)
 //关于for of in
