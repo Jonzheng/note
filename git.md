@@ -55,6 +55,8 @@ git branch -d dev
 Esc+":"+"wq"	Esc+":"+"q!"	Esc+":"+"!"
 
 
+ssh -vT git@github.com
+
 ##ping github.com time out?
 ###配置--同目录下touch config
 Host github.com
