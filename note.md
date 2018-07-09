@@ -13,6 +13,23 @@
 商店(主题曲)
 ===
 
+t_question
+question_id,
+option_a,
+option_b,
+option_c,
+option_d,
+content,
+right_option,
+explain,
+type,
+src_sound,
+src_image,
+article,
+uploader,
+c_date
+
+
 update t set A = case when B=条件 then '111' else '222' end
 
 
