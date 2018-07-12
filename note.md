@@ -13,7 +13,8 @@
 商店(主题曲)
 ===
 
-t_question
+t_paper
+paper_id,
 question_id,
 option_a,
 option_b,
