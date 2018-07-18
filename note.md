@@ -13,7 +13,23 @@
 商店(主题曲)
 ===
 
+准考证?
+===
+
 t_paper
+paper_id,
+title,
+description,
+level,
+difficulty,
+total,
+status,
+uploader,
+c_date,
+
+--
+
+t_question
 paper_id,
 question_id,
 option_a,
@@ -23,6 +39,7 @@ option_d,
 content,
 right_option,
 explain,
+point,
 type,
 src_sound,
 src_image,
@@ -30,6 +47,26 @@ article,
 uploader,
 c_date
 
+--
+t_answer_tmp
+openid,
+paper_id,
+answer,
+spend,
+status,
+c_date
+
+--
+t_answer
+openid,
+paper_id,
+answer,
+spand,
+point,
+status,
+c_date
+
+--
 
 update t set A = case when B=条件 then '111' else '222' end
 
