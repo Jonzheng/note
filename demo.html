@@ -12,9 +12,26 @@
                 $(this).toggleClass("pt-on")
             })
 
-
             $(".front-pane").click(function(){
                 console.log("front")
+            })
+
+            $("#text-in1").on("keyup", function(){
+                var _val = $(this).val()
+                console.log(_val)
+                $("#text-out1").val(_val)
+                $("#text-out2").text(_val)
+            })
+
+
+            $("#btn1").click(function(){
+                $("#box-radio").toggleClass("radio-checked")
+                $("#box-radio > div").toggleClass("center-checked")
+            })
+
+            $("#btn2").click(function(){
+                //$("#box-tran").removeClass("an1")
+                $("#angle-e").toggleClass("square-e")
             })
         })
 
@@ -24,75 +41,117 @@
 
 <body>
     <h3>布局修炼手册</h3>
-    <div class="bar"></div>
-    <div class="tri"></div>
-    <div class="box">
-        <div class="ele k50"></div>
-        <div class="ele k20"></div>
-        <div class="ele k30"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-        <div class="ele k50"></div>
-        <div class="ele k10"></div>
-        <div class="ele k30"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-        <div class="ele k50"></div>
-        <div class="ele k20"></div>
-        <div class="ele k30"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-        <div class="ele k50"></div>
-        <div class="ele k10"></div>
-        <div class="ele k30"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-        <div class="ele k50"></div>
-        <div class="ele k20"></div>
-        <div class="ele k30"></div>
-        <div class="ele k50"></div>
-        <div class="ele k10"></div>
-        <div class="ele k30"></div>
-        <div class="ele k10"></div>
-        <div class="ele k40"></div>
-        <div class="ele k10"></div>
-    </div>
-    <div class="btn-box">
-        <div id="btn" class="pt">
-        </div>
-        <div class="pt-text">卍</div>
-    </div>
+    <div class="container center">
+            <div>
+                <div id="btn1" class="btn btn-default">Button1</div>
+                <div id="btn2" class="btn btn-default">Button2</div>
+            </div>
+        <div class="form-group">
+            <div style="display: none">
+                <div>
+                    <textarea id="text-in1" type="text" class="form-control" rows="6" spellcheck="false"></textarea>
+                </div>
+                <div>
+                    <textarea id="text-out1" type="text" class="form-control" rows="6" spellcheck="false"></textarea>
+                </div>
+                <div>
+                    <div id="text-out2" class="text-wk"></div>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div id="box-tran" class="box-tran"> </div>
+            </div>
+            <hr>
 
-    <div class="flow-box">
-        <div class="level">
-            <div class="flow">keep out keep out keep out</div>
-        </div>
+            <div id="box-radio" class="box-radio">
+                <div class=""> </div>
+            </div>
 
-        <div class="level-2">
-            <div class="spin">keep alive keep alive keep alive</div>
+            <div id="box-radio1" class="box-radio">
+                <div class=""> </div>
+            </div>
+            <hr>
+            <div class="box-flex">
+                <div id="angle-e" class="angle-e"></div>
+            </div>
+            <div class="angle-right"></div>
+
         </div>
     </div>
 
-    <div style="height: 300px;margin-top:40px;">
-			<div class="cube-wrap">
-				<div class="cube depth">
-					<div class="front-pane">实验室简介</div>
-					<div class="back-pane">五十音图</div>
-					<div class="top-pane">卍</div>
-					<div class="bottom-pane">卍</div>
-					<div class="left-pane">卍</div>
-					<div class="right-pane">卍</div>
-				</div>
-			</div>
-		</div>
+    <div style="display: none">
+        <div class="bar"></div>
+        <div class="tri"></div>
+        <div class="box">
+            <div class="ele k50"></div>
+            <div class="ele k20"></div>
+            <div class="ele k30"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+            <div class="ele k50"></div>
+            <div class="ele k10"></div>
+            <div class="ele k30"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+            <div class="ele k50"></div>
+            <div class="ele k20"></div>
+            <div class="ele k30"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+            <div class="ele k50"></div>
+            <div class="ele k10"></div>
+            <div class="ele k30"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+            <div class="ele k50"></div>
+            <div class="ele k20"></div>
+            <div class="ele k30"></div>
+            <div class="ele k50"></div>
+            <div class="ele k10"></div>
+            <div class="ele k30"></div>
+            <div class="ele k10"></div>
+            <div class="ele k40"></div>
+            <div class="ele k10"></div>
+        </div>
+        <div class="btn-box">
+            <div id="btn" class="pt">
+            </div>
+            <div class="pt-text">卍</div>
+        </div>
+    </div>
+    <div style="display: none">
+        <div class="flow-box">
+            <div class="level">
+                <div class="flow">keep out keep out keep out</div>
+            </div>
 
+            <div class="level-2">
+                <div class="spin">keep alive keep alive keep alive</div>
+            </div>
+        </div>
+    </div>
+     <div style="display: none">
+        <div style="height: 300px;margin-top:40px;">
+            <div class="cube-wrap">
+                <div class="cube depth">
+                    <div class="front-pane">实验室简介</div>
+                    <div class="back-pane">五十音图</div>
+                    <div class="top-pane">卍</div>
+                    <div class="bottom-pane">卍</div>
+                    <div class="left-pane">卍</div>
+                    <div class="right-pane">卍</div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 
@@ -100,7 +159,145 @@
 
 body{
     margin: 10px 20px;
+    margin-bottom: 120px;
+    padding-bottom: 120px;
 }
+
+.box-flex{
+    height: 120px;
+    width: 120px;
+    border: 1px solid #bbb;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.angle-e{
+    width: 0;
+    height: 0;
+    border-left: 30px solid #777;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: all 0.3s ease-in;
+}
+
+.square-e{
+    width: 0;
+    height: 0;
+    border: 20px solid #777;
+    transition: all 0.3s ease-out;
+}
+
+.angle-right{
+    width:0;
+    height:0;
+    border-width:30px 0 30px 30px;
+    border-style:solid;
+    border-color:transparent transparent transparent #777;/*透明 透明 透明 灰*/
+    position:relative;
+}
+
+.ann1-cs{
+    animation: ann1 3s linear infinite;
+}
+
+@keyframes ann1{
+    50% {
+        transform: rotateX(180deg);
+    }
+}
+
+
+.box-radio{
+    margin: 10px 10px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #bbb;
+    box-shadow: 0 0px 20px #eee inset;
+    border-radius: 40px;
+    transition: all 0.3s;
+}
+
+.radio-checked{
+    box-shadow: 0 0px 20px #3498db;
+    border: 1px solid #fff;
+    transition: all 0.5s ease-in;
+}
+
+.god-on-radio{
+    border: 1px solid #fff;
+    box-shadow: 0 0px 20px rgba(255, 0, 0, 0.8);
+}
+
+.radio-center{
+    height: 20px;
+    width: 20px;
+    background-color:#fff;
+    box-shadow: 0 0px 20px #fff inset;
+    border-radius: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.center-checked{
+    height: 20px;
+    width: 20px;
+    background-color:#3498db;
+    box-shadow: 0 0px 20px #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease-in;
+}
+
+
+.comtainer{
+    text-align: center;
+    width: 90%;
+    margin: 60px auto;
+}
+
+.box-tran{
+    background-color: #bbb;
+    border: 1px solid #666;
+    width: 36px;
+    height: 80px;
+    transition: all 0.5s ease;
+}
+
+.text-wk{
+    border: 1px solid #bbb;
+    width: 200px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.an1{
+    width: 520px;
+    transition: all 0.5s ease;
+}
+
+.btn{
+    margin: 10px 10px;
+}
+
+.btn-default{
+    border: 1px solid #ccc;
+    background-color: #bbb;
+    padding: 5px 5px;
+    width: 120px;
+    height: 36px;
+}
+
+.btn-default:hover{
+    border: 1px solid #ccc;
+    background-color: #999;
+    padding: 5px 5px;
+    width: 120px;
+    height: 36px;
+}
+
 
 .level{
     position: relative;
@@ -118,6 +315,7 @@ body{
     color: rgba(255,255,255,.25);
     border: 4px double rgba(255,255,255,.25);
     border-width: 4px 0;
+    transition: transform 3s;
 }
 
 .level-2{
