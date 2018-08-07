@@ -1,0 +1,18 @@
+.icon{
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    font-style: normal;
+    color: #ddd;
+    text-align: left;
+    text-indent: -9999px;
+    direction: ltr;
+}
+
+.mirc{
+    width: 22px;
+    height: 15px;
+    border-width: 0 2px 2px;
+    border-radius: 20px / 0 0 20px 20px;
+    margin: 12px 6px 7px;
+}
