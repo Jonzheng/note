@@ -494,7 +494,33 @@ body{
     background-size: 60px 10px, 10px 60px, 60px 60px;
     transform: rotate(-45deg);
 }
+.fade-in{
+        color: #ccc;
+        animation: ke-fade-in 1s ease-in;
+        will-change: top;
+    }
 
+    @keyframes ke-fade-in{
+        0%{
+            top: 80px;
+        }
+        10%{
+            top: -20px;
+            opacity: 0.8;
+        }
+        30%{
+            opacity: 1;
+            top: 0;
+            }
+        90%{
+            opacity: 0.8;
+            top: 0;
+            }
+        100%{
+            opacity: 0;
+            top: 30;
+        }
+    }
 
 .k10{
     height: 10px;
