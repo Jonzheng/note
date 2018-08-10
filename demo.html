@@ -38,6 +38,21 @@
                 //$("#box-tran").removeClass("an1")
                 $("#angle-e").toggleClass("square-e")
             })
+
+            var secc = 0
+            interv = setInterval(function(){
+                secc += 1
+                var ss = secc % 60
+                var mm = parseInt(secc / 60)
+                if (mm > 59) mm = mm % 60
+                var hh = parseInt(secc / 3600)
+                if (ss < 10) ss = "0"+ss
+                if (mm < 10) mm = "0"+mm
+                if (hh < 10) hh = "0"+hh
+                var times = hh +":"+ mm + ":"+ ss
+                console.log(times)
+                $("#tti").val(times)
+            },100)
         })
 
     </script>
@@ -282,9 +297,10 @@ body{
 .box-tran{
     background-color: #bbb;
     border: 1px solid #666;
-    width: 36px;
-    height: 80px;
+    width: 220px;
+    height: 160px;
     transition: all 0.5s ease;
+    clip-path: polygon(1px 10px, 21px 87px, 179px 15px);
 }
 
 .text-wk{
