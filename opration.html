@@ -1,0 +1,475 @@
+<html>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<header>
+    <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="my_css/load.css" rel="stylesheet">
+        <script type="text/javascript">
+           
+            $(function(){
+                console.log("foobat")
+                var hp = "2018-03-27,239.00;2018-03-28,259.00;2018-03-29,259.00;2018-03-30,259.00;2018-03-31,259.00;2018-04-01,259.00;2018-04-02,259.00;2018-04-03,259.00;2018-04-04,259.00;2018-04-05,259.00;2018-04-06,259.00;2018-04-07,259.00;2018-04-08,259.00;2018-04-09,259.00;2018-04-10,259.00;2018-04-11,209.00;2018-04-12,209.00"
+                hp = "2018-03-27,688.00;2018-03-28,688.00;2018-03-29,688.00;2018-03-30,688.00;2018-03-31,688.00;2018-04-01,688.00;2018-04-02,688.00;2018-04-03,688.00;2018-04-04,688.00;2018-04-05,688.00;2018-04-06,688.00;2018-04-07,688.00;2018-04-08,688.00;2018-04-09,688.00;2018-04-10,539.00;2018-04-11,539.00;2018-04-12,539.00;2018-04-13,539.00;2018-04-21,688.00;2018-04-23,688.00;2018-04-24,499.00;2018-04-27,499.00;2018-04-28,688.00;2018-04-30,688.00;2018-05-12,688.00;2018-05-13,688.00;2018-06-03,549.00;2018-06-10,549.00;2018-06-11,549.00;2018-06-14,549.00;2018-06-17,549.00;2018-06-18,549.00;2018-06-21,688.00;2018-06-24,549.00;2018-06-25,549.00;2018-06-28,549.00;2018-07-01,549.00;2018-07-02,549.00;2018-07-05,549.00;2018-07-08,549.00;2018-07-09,549.00;2018-07-12,549.00;2018-07-15,549.00;2018-07-19,549.00;2018-07-22,549.00;2018-07-23,549.00;2018-07-26,549.00;2018-07-29,549.00;2018-07-30,549.00;2018-08-05,549.00"
+                var hps = hp.split(";")
+
+                var max_pri = 0
+                var min_pri = 0
+                var date_pri_map = {}
+                for (let date_pri of hps){
+                    var ss = date_pri.split(",")
+                    var da = ss[0].substr(5)
+                    var pr = ss[1]
+                    if (pr > max_pri) max_pri = pr
+                    if(pr < min_pri || min_pri == 0) min_pri = pr
+                    date_pri_map[da] = pr
+                }
+
+                $("#box-his .box-lev").remove()
+
+                for (let ma in date_pri_map){
+                    var _date = ma
+                    var _price = date_pri_map[ma]
+                    var _height = _price/max_pri * 100
+
+                    var $ele = `
+                        <div class="box-lev">
+                            <div class="ele-top hosh">${_price}</div>
+                            <div class="ele" style="height: ${_height}px;"></div>
+                            <div class="ele-foot">${_date}</div>
+                        </div>
+                        `
+                    
+                    $("#box-his").append($ele)
+                }
+                console.log("[",min_pri, ",", max_pri,"]")
+
+                $("#box-his").click(function(){
+                    $("#mm").toggleClass("fade-in")
+                })
+
+
+                //canvas--
+
+                draw = function (){
+                    var canv = $("#tutorial")[0]
+                    var ctx = canv.getContext("2d")
+                    ctx.fillStyle = "rgba(100,0,100,0.6)"
+                    ctx.fillRect(10,10,50,60)
+
+                    ctx.clearRect(20, 20, 10, 20)
+
+
+                    ctx.beginPath(); //新建一条path
+                    ctx.moveTo(50, 50); //把画笔移动到指定的坐标
+                    ctx.lineTo(200, 50);  //绘制一条从当前位置到指定坐标(200, 50)的直线.
+                    //闭合路径。会拉一条从当前点到path起始点的直线。如果当前点与起始点重合，则什么都不做
+                    ctx.closePath();
+                    ctx.moveTo(50, 100);
+                    ctx.lineTo(200, 50);
+                    ctx.lineTo(200, 200);
+                    ctx.closePath();
+                    ctx.stroke(); //绘制路径。
+
+                    ctx.arc(200, 200, 40, 0, Math.PI * 2, true);
+                    ctx.stroke();
+
+                    ctx.font = "3em sans-serif"
+                    ctx.fillText("无", 10, 100);
+                }
+                draw();
+
+                function draw2(){
+                    var canv = $("#tutorial")[0]
+                    var ctx = canv.getContext("2d")
+                    if (!canv.getContext) return;
+                    var ctx = canv.getContext("2d");
+                    for (var i = 0; i < 6; i++){
+                        for (var j = 0; j < 6; j++){
+                            ctx.strokeStyle = `rgb(${randomInt(0, 255)},${randomInt(0, 255)},${randomInt(0, 255)})`;
+                            ctx.strokeRect(j * 50, i * 50, 40, 40);
+                        }
+                    }
+                }
+                draw2();
+
+                function randomInt(from, to){
+                    return parseInt(Math.random() * (to - from + 1) + from);
+                }
+
+
+                var running = false
+                //frame
+                slider = function(){
+                    running = true
+                    var $bar = $("#bar")
+                    var timer = requestAnimationFrame(function fn(){
+                        var wd = $bar.width()
+                        if (wd > 1010){
+                            cancelAnimationFrame(timer)
+                        }else{
+                            //16.6ms
+                            wd += 1
+                            $bar.width(wd) 
+                            console.log(wd);
+                            timer = requestAnimationFrame(fn)
+                        }
+                    });
+
+                    $("#sub").click(function(){
+                        cancelAnimationFrame(timer)
+                        running = false
+                    })
+                }
+
+                   moveVertical = function(old_x, min, max){
+                        for (let road_y = min+1; road_y < max; road_y++){
+                            console.log(old_x, road_y)
+                        }
+                    }
+
+                    goLink = function($old, $this){
+                        var old_x = parseInt($old.data("x"))
+                        var old_y = parseInt($old.data("y"))
+                        var this_x = parseInt($this.data("x"))
+                        var this_y = parseInt($this.data("y"))
+
+                        //坐标原点在左上角
+                        if(old_x == this_x){  //竖线
+                            console.log("Vertical")
+                            if (old_y < this_y){  //$this在下方
+                                moveVertical(old_x, old_y, this_y)
+                            }else{
+                                moveVertical(old_x, this_y, old_y)
+                            }
+
+                        }else if(old_y == this_y){
+                            console.log("horizontal")
+                        }else{ //不在同一直线上
+
+                        }
+                        //如果找到路径
+                        setTimeout(function(){
+                            $old.delay(1000).removeClass("link-active");
+                            $this.delay(2000).removeClass("link-active");
+                        },500)
+
+                    }
+
+                $("#plus").click(function(){
+                    //if (running) return
+                    //slider()
+                    $box = $("#box-link")
+                    $box.find(".box-link-line").remove()
+                    for(let row =0;row < 8;row++){
+                        var str_row = `<div class="box-link-line">`
+                        for(let col =0;col < 8;col++){
+                            var ran = Math.random()
+                            var str_ele = ""
+                            if (ran > 0.6){
+                                str_ele = `<div class="ele-link" data-status="1" data-x="${col}" data-y="${row}">${col}-${row}</div>`
+                            }else{
+                                str_ele = `<div class="ele-link ele-hide" data-status="0" data-x="${col}" data-y="${row}"></div>`
+                            }
+                            
+                            str_row += str_ele
+                        }
+                        str_row += "</div>"
+                        $box.append(str_row)
+                    }
+
+                    var bucket = []
+                    $(".ele-link").on("click",function(){
+                        if( $(this).hasClass("link-active") ) return
+
+                        //var status = $(this).data("status")
+                        //var row = $(this).data("row")
+                        //var col = $(this).data("col")
+                        //var xy = [row,col]
+
+                        if (bucket.length == 1){
+                            $(this).addClass("link-active")
+                            var $old = bucket.pop()
+
+                            //go_link
+                            goLink($old, $(this))
+
+                        }else{
+                            bucket.push($(this))
+                            $(this).addClass("link-active")
+                        }
+                        
+
+                    })
+                })
+
+                $("#plus").trigger("click")
+
+                /**
+                var secc = 0
+                interv = setInterval(function(){
+                    secc += 1
+                    var ss = secc % 60
+                    var mm = parseInt(secc / 60)
+                    if (mm > 59) mm = mm % 60
+                    var hh = parseInt(secc / 3600)
+                    if (ss < 10) ss = "0"+ss
+                    if (mm < 10) mm = "0"+mm
+                    if (hh < 10) hh = "0"+hh
+                    var times = hh +":"+ mm + ":"+ ss
+                    console.log(times)
+                    $("#tti").val(times)
+                },100)
+
+*/
+
+
+
+            })
+
+
+
+        </script>
+    </header>
+    <body>
+        <div class="tit">
+            <div id="mm" class="stand">某</div>
+            <div id="bb" class="stand-cl">类</div>
+            <span>商品-历史价格</span>
+        </div>
+    <hr>
+    <div class="pred-result">
+        <div id="box-his" class="box-his">
+            <div class="box-lev">
+                <div class="ele-top">pri</div>
+                <div class="ele ele1"></div>
+                <div class="ele-foot">date</div>
+            </div>
+        </div>
+        <hr>
+        <div id="bar" class="bar"> </div>
+            <button id="sub" class="btn btn-sm btn-default">||</button>
+            <button id="plus" class="btn btn-sm btn-default">>></button>
+        <div>
+        <hr>
+        <div id="box-link" class="box-link">
+            <div class="box-link-line">
+                <div class="ele-link">10</div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>   
+            </div>
+
+            <div class="box-link-line">
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>   
+            </div>
+            <div class="box-link-line">
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>
+                <div class="ele-link"></div>   
+            </div>
+        </div>
+        <canvas id="tutorial" width="300" height="300" style="display: none"></canvas>
+        <hr>
+            <input id="tti" class="from-control" style="display: none">
+        </div>
+    </div>
+    </body>
+
+<!-- 子元素z-index 高于父元素 z-index; 不可能-->
+    <style type="text/css">
+
+.box-link-line{
+    display: flex;
+    flex: none;
+    height: 60px;
+}
+
+.ele-hide{
+    opacity: 0.1;
+}
+
+.box-link{
+    display: flex;
+    flex-direction:column;
+    height: 500px;
+    width: 500px;
+    border: 1px solid #666;
+    border-radius: 5px;
+}
+
+.ele-link{
+    flex: none;
+    padding: 20px auto;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    margin: 5px 5px;
+}
+
+.ele-link:hover{
+    transform: scale(1.05, 1.05);
+    transition: 0.1s ease-in;
+}
+
+.link-active{
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 10px rgba(0, 26, 255, 0.795);
+    transition: 0.3s ease-in;
+}
+
+    .bar{
+        border: 1px solid #999;
+        width: 0;
+    }
+    #tutorial{
+        margin-top: 366px;
+        border: 1px solid #ccc;
+    }
+    .tit{
+        display: flex;
+        font-weight: bold;
+        font-size: 22px;
+    }
+    #mm::after{
+        content: "|";
+    }
+    .hide-word{
+        color: #bbb;
+        position: relative;
+        width: 1em;
+        height: 1em;
+        top: 122px;
+        left: 320px;
+        transform: rotate(890deg);
+        transition: all 1s ease-in;
+        animation-fill-mode: forwards;
+    }
+
+    .fade-in{
+        color: #ccc;
+        animation: ke-fade-in 1s ease-in;
+        will-change: top;
+    }
+
+    @keyframes ke-fade-in{
+        0%{
+            top: 80px;
+        }
+        10%{
+            top: -20px;
+            opacity: 0.8;
+        }
+        30%{
+            opacity: 1;
+            top: 0;
+            }
+        90%{
+            opacity: 0.8;
+            top: 0;
+            }
+        100%{
+            opacity: 0;
+            top: 30;
+        }
+    }
+
+    .stand{
+        position: relative;
+        width: 1em;
+        height: 1em;
+        top: 90px;
+        left: 0;
+        opacity: 0;
+        will-change: top;
+    }
+
+    .stand-cl{
+        position: relative;
+        width: 1em;
+        height: 1em;
+        top: 0px;
+        left: 0;
+        will-change: top;
+        transition: all 1s ease-in;
+    }
+
+    .stand-cl:hover{
+        top: 100px;
+        font-weight: 3em;
+        background-color: #666;
+        clip-path: polygon(0 0,  50%, 50% 100%, 0% 50%);
+        transition: all 1s ease-in;
+    }
+        .box-his{
+            display: flex;
+            height: 150px;
+            width: 888px;
+            border-top: 1px solid #bbb;
+            border-bottom: 1px solid #bbb;
+            margin: 20px;
+            align-items: flex-end;
+        }
+
+        .box-lev{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top:18px;
+            width: 46px;
+        }
+
+        .ele{
+            width: 20px;
+            border: 1px solid #999;
+            background-color: #bbb;
+        }
+
+        .ele-foot{
+            width: 46px;
+            height: 18px;
+            border-right: 1px solid #666;
+        }
+
+        .ele-foot{
+            width: 46px;
+            height: 18px;
+        }
+
+        .ele1{
+            height: 66px;
+        }
+        .ele2{
+            height: 33px;
+        }
+        .ele3{
+            height: 99px;
+        }
+
+
+        body{
+            font-size: 14px;
+            text-align: center;
+            margin: 10px auto;
+            width:96%;
+        }
+    </style>
+</html>
