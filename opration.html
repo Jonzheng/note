@@ -16,6 +16,12 @@
                 var max_pri = 0
                 var min_pri = 0
                 var date_pri_map = {}
+
+
+                var elements = []
+                var col_max = 8
+                var row_max = 8
+
                 for (let date_pri of hps){
                     var ss = date_pri.split(",")
                     var da = ss[0].substr(5)
@@ -122,32 +128,106 @@
                     })
                 }
 
-                   moveVertical = function(old_x, min, max){
-                        for (let road_y = min+1; road_y < max; road_y++){
-                            console.log(old_x, road_y)
+                var steps = []
+                    linkRow = function(old_row, old_col, this_col){
+                        var min = 0
+                        var max = 0
+                        if (old_col < this_col){
+                            min = old_col + 1
+                            max = this_col
+                        }else{
+                            min = this_col + 1
+                            max = old_col
                         }
+                        for (let road_col = min; road_col < max; road_col++){
+                            console.log(old_row, road_col)
+                            var step = elements[old_row][road_col]
+                            if (step.status == 0){
+                                steps.push(step)
+                            }else{
+                                //连接失败
+                                steps = []
+                                return false
+                            }
+                        }
+                        //相邻
+                        return true
                     }
 
-                    goLink = function($old, $this){
-                        var old_x = parseInt($old.data("x"))
-                        var old_y = parseInt($old.data("y"))
-                        var this_x = parseInt($this.data("x"))
-                        var this_y = parseInt($this.data("y"))
+                    linkCol = function(old_col, old_row, this_row){
+                        var min = 0
+                        var max = 0
+                        if (old_row < this_row){
+                            min = old_row + 1
+                            max = this_row
+                        }else{
+                            min = this_col + 1
+                            max = this_row
+                        }
 
-                        //坐标原点在左上角
-                        if(old_x == this_x){  //竖线
-                            console.log("Vertical")
-                            if (old_y < this_y){  //$this在下方
-                                moveVertical(old_x, old_y, this_y)
+                        for (let road_row = min; road_row < max; road_row++){
+                            console.log(road_row, old_col)
+                            var step = elements[road_row][old_col]
+                            if (step.status == 0){
+                                steps.push(step)
                             }else{
-                                moveVertical(old_x, this_y, old_y)
+                                //连接失败
+                                steps = []
+                                return false
+                            }
+                        }
+                        //相邻
+                        return true
+                    }
+
+                    goLinkDe = function($old, $this){
+                        var old_row = parseInt($old.data("row"))
+                        var old_col = parseInt($old.data("col"))
+                        var this_row = parseInt($this.data("row"))
+                        var this_col = parseInt($this.data("col"))
+
+                        var linked = false
+                        //坐标原点在左上角
+                        //第一类:同一直线上(同一行)
+                        if(old_row == this_row){
+                            console.log("same row")
+                            linked = linkRow(old_row, old_col, this_col)
+
+                            if (linked){
+                                for(let step of steps){
+                                    console.log(step)
+                                }
+                                steps = []
+
+                            //如果直线连接失败,尝试上/下绕开
+                            }else{
+                                console.log("try...rect...")
                             }
 
-                        }else if(old_y == this_y){
-                            console.log("horizontal")
-                        }else{ //不在同一直线上
+
+                        //第二类:同一直线上(同一列)
+                        }else if(old_col == this_col){
+                            console.log("same col")
+                            linked = linkCol(old_col, old_row, this_row)
+     
+                            //如果连接成功
+                            if (linked){
+                                for(let step of steps){
+                                    console.log(step)
+                                }
+                                steps = []
+
+                            //如果直线连接失败,尝试上/下绕开
+                            }else{
+                                console.log("try...rect...")
+                            }
+
+                        //第三类:不在同一直线上
+                        }else{
 
                         }
+
+
                         //如果找到路径
                         setTimeout(function(){
                             $old.delay(1000).removeClass("link-active");
@@ -156,24 +236,322 @@
 
                     }
 
+                    rightLink = function(begin_col, end_col, fixed_row){
+                        var linked = false
+                        var steps = []
+                        var step_col = begin_col
+                        while (step_col < end_col){
+                            step_col += 1
+                            var step = elements[fixed_row][step_col]
+                            if (step.status == 1) break
+                            var row_col = step.row+","+step.col
+                            steps.push(row_col)
+                            if (this_lefts.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_ups.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_downs.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }
+                        }//while end
+                        return linked
+                    }
+
+                    downLink = function(begin_row, end_row, fixed_col){
+                        var linked = false
+                        var steps = []
+                        var step_row = begin_row
+                        while (step_row < end_row){
+                            step_row += 1
+                            var step = elements[step_row][fixed_col]
+                            if (step.status == 1) break
+                            var row_col = step.row+","+step.col
+                            steps.push(row_col)
+
+                            if (this_ups.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_lefts.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_rights.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }
+
+                        }//while end
+                        return linked
+                    }
+
+                    leftLink = function(begin_col, end_col, fixed_row){
+                        var linked = false
+                        var steps = []
+                        var step_col = begin_col
+                        while (step_col > end_col){
+                            step_col -= 1
+                            var step = elements[fixed_row][step_col]
+                            if (step.status == 1) break
+                            var row_col = step.row+","+step.col
+                            steps.push(row_col)
+
+                            if (this_rights.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_ups.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_downs.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }
+                        }//while end
+                        return linked
+                    }
+
+                    upLink = function(begin_row, end_row, fixed_col){
+                        var linked = false
+                        var steps = []
+                        var step_row = begin_row
+                        while (step_row > end_row){
+                            step_row -= 1
+                            var step = elements[step_row][fixed_col]
+                            if (step.status == 1) break
+                            var row_col = step.row+","+step.col
+                            steps.push(row_col)
+
+                            if (this_downs.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_lefts.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }else if(this_rights.includes(row_col)){
+                                console.log(steps)
+                                linked = true
+                                break
+                            }
+                        }//while end
+                        return linked
+                    }
+                    isNext = function(old_row, old_col, this_row, this_col){
+                        if (old_col == this_col && Math.abs(old_row - this_row) == 1){
+                            return true
+                        }
+                        if (old_row == this_row && Math.abs(old_col - this_col) == 1){
+                            return true
+                        }
+                        return false
+                    }
+
+                    var this_lefts = []
+                    var this_rights = []
+                    var this_ups = []
+                    var this_downs = []
+                    linkDirect = function(old_row, old_col, this_row, this_col){
+                        var linked = isNext(old_row, old_col, this_row, this_col)
+                        if (linked){
+                            console.log("is next")
+                            return
+                        }
+                        this_lefts = []
+                        this_rights = []
+                        this_ups = []
+                        this_downs = []
+
+                        var step_col = this_col
+                        while (step_col > 0){
+                            step_col -= 1
+                            var step = elements[this_row][step_col]
+                            if (step.status == 1) break
+                            this_lefts.push(step.row+","+step.col)
+                        }
+                        step_col = this_col
+                        
+                        while (step_col < col_max-1){
+                            step_col += 1
+                            var step = elements[this_row][step_col]
+                            if (step.status == 1) break
+                            this_rights.push(step.row+","+step.col)
+                        }
+                        var step_row = this_row
+                       
+                        while (step_row > 0){
+                            step_row -= 1
+                            var step = elements[step_row][this_col]
+                            if (step.status == 1) break
+                            this_ups.push(step.row+","+step.col)
+                        }
+                        step_row = this_row
+                        
+                        while (step_row < row_max-1){
+                            step_row += 1
+                            var step = elements[step_row][this_col]
+                            if (step.status == 1) break
+                            this_downs.push(step.row+","+step.col)
+                        }
+
+                        console.log("this_lefts")
+                        for( let step of this_lefts){
+                            console.log(step)
+                        }
+                        console.log("this_rights")
+                        for( let step of this_rights){
+                            console.log(step)
+                        }
+                        console.log("this_ups")
+                        for( let step of this_ups){
+                            console.log(step)
+                        }
+                        console.log("this_downs")
+                        for( let step of this_downs){
+                            console.log(step)
+                        }
+                        console.log("======")
+
+                        //从old_开始寻路
+                        console.log("右")
+                        var linked = rightLink(old_col, this_col, old_row)
+                        if(!linked) {
+                            console.log("下")
+                            linked = downLink(old_row, this_row, old_col)
+                        }
+                        if (!linked){
+                            console.log("左")
+                            linked = leftLink(old_col, this_col, old_row)
+                        }                        
+                        if (!linked){
+                            console.log("上")
+                            linked = upLink(old_row, this_row, old_col)
+                        }
+
+                        if (!linked){
+                            console.log("二次")
+                            //右-上/下
+                            //左-上/下
+                            //下-左/右
+                            //上-左/右
+                            steps = []
+                            var step_col = old_col
+                            while (step_col < col_max){
+                                step_col += 1
+                                var step = elements[old_row][step_col]
+                                if (step.status == 1) break
+                                var row_col = step.row+","+step.col
+                                steps.push(row_col)
+                                console.log(steps)
+                                //(begin_row, end_row, fixed_col)
+                                linked = upLink(step.row, this_row, step.col)
+                                if (linked) break
+                                linked = downLink(step.row, this_row, step.col)
+                                if (linked) break
+                            }
+                        }
+                        if (!linked){
+                            steps = []
+                            var step_col = old_col
+                            while (step_col > 0){
+                                step_col -= 1
+                                var step = elements[old_row][step_col]
+                                if (step.status == 1) break
+                                var row_col = step.row+","+step.col
+                                steps.push(row_col)
+                                console.log(steps)
+                                //(begin_row, end_row, fixed_col)
+                                linked = upLink(step.row, this_row, step.col)
+                                if (linked) break
+                                linked = downLink(step.row, this_row, step.col)
+                                if (linked) break
+                            }
+                        }
+                        if (!linked){
+                            steps = []
+                            var step_row = old_row
+                            while (step_row < row_max){
+                                step_row += 1
+                                var step = elements[step_row][old_col]
+                                if (step.status == 1) break
+                                var row_col = step.row+","+step.col
+                                steps.push(row_col)
+                                console.log(steps)
+                                //(begin_col, end_col, fixed_row)
+                                linked = leftLink(step.col, this_col, step.row)
+                                if (linked) break
+                                linked = rightLink(step.col, this_col, step.row)
+                                if (linked) break
+                            }
+                        }
+                        if (!linked){
+                            steps = []
+                            var step_row = old_row
+                            while (step_row > 0){
+                                step_row -= 1
+                                var step = elements[step_row][old_col]
+                                if (step.status == 1) break
+                                var row_col = step.row+","+step.col
+                                steps.push(row_col)
+                                console.log(steps)
+                                //(begin_col, end_col, fixed_row)
+                                linked = leftLink(step.col, this_col, step.row)
+                                if (linked) break
+                                linked = rightLink(step.col, this_col, step.row)
+                                if (linked) break
+                            }
+                        }
+                    }
+                    goLink = function($old, $this){
+                        var old_row = parseInt($old.data("row"))
+                        var old_col = parseInt($old.data("col"))
+                        var this_row = parseInt($this.data("row"))
+                        var this_col = parseInt($this.data("col"))
+
+                        //顺时针延伸-是否直接包含目标点坐标
+                        linkDirect(old_row, old_col, this_row, this_col)
+
+                        //如果找到路径
+                        setTimeout(function(){
+                            $old.delay(1000).removeClass("link-active");
+                            $this.delay(2000).removeClass("link-active");
+                        },500)
+                    }
+
                 $("#plus").click(function(){
                     //if (running) return
                     //slider()
                     $box = $("#box-link")
                     $box.find(".box-link-line").remove()
-                    for(let row =0;row < 8;row++){
+                    for(let row =0;row < col_max;row++){
                         var str_row = `<div class="box-link-line">`
-                        for(let col =0;col < 8;col++){
+                        var rows = []
+                        for(let col =0;col < row_max;col++){
                             var ran = Math.random()
                             var str_ele = ""
-                            if (ran > 0.6){
-                                str_ele = `<div class="ele-link" data-status="1" data-x="${col}" data-y="${row}">${col}-${row}</div>`
+                            var status = 0
+                            if (ran > 0.4 || row == 0 || row == row_max-1 || col == 0 || col == col_max-1){
+                                rows.push({row,col,status})
+                                str_ele = `<div class="ele-link ele-hide" data-status="${status}" data-row="${row}" data-col="${col}"></div>`
                             }else{
-                                str_ele = `<div class="ele-link ele-hide" data-status="0" data-x="${col}" data-y="${row}"></div>`
+                                status = 1
+                                rows.push({row,col,status})
+                                str_ele = `<div class="ele-link" data-status="${status}" data-row="${row}" data-col="${col}">${row}-${col}</div>`
                             }
-                            
+
                             str_row += str_ele
                         }
+                        elements.push(rows)
                         str_row += "</div>"
                         $box.append(str_row)
                     }
@@ -192,6 +570,7 @@
                             var $old = bucket.pop()
 
                             //go_link
+                            //这个算法分支太多-弃用
                             goLink($old, $(this))
 
                         }else{
