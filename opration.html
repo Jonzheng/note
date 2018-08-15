@@ -446,18 +446,21 @@
                             //上-左/右
                             steps = []
                             var step_col = old_col
-                            while (step_col < col_max){
+                            while (step_col < col_max - 1){
                                 step_col += 1
                                 var step = elements[old_row][step_col]
                                 if (step.status == 1) break
                                 var row_col = step.row+","+step.col
                                 steps.push(row_col)
-                                console.log(steps)
                                 //(begin_row, end_row, fixed_col)
                                 linked = upLink(step.row, this_row, step.col)
-                                if (linked) break
+                                if (linked) {
+                                    console.log(steps)
+                                    break
+                                }
                                 linked = downLink(step.row, this_row, step.col)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                             }
                         }
                         if (!linked){
@@ -469,29 +472,31 @@
                                 if (step.status == 1) break
                                 var row_col = step.row+","+step.col
                                 steps.push(row_col)
-                                console.log(steps)
                                 //(begin_row, end_row, fixed_col)
                                 linked = upLink(step.row, this_row, step.col)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                                 linked = downLink(step.row, this_row, step.col)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                             }
                         }
                         if (!linked){
                             steps = []
                             var step_row = old_row
-                            while (step_row < row_max){
+                            while (step_row < row_max - 1){
                                 step_row += 1
                                 var step = elements[step_row][old_col]
                                 if (step.status == 1) break
                                 var row_col = step.row+","+step.col
                                 steps.push(row_col)
-                                console.log(steps)
                                 //(begin_col, end_col, fixed_row)
                                 linked = leftLink(step.col, this_col, step.row)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                                 linked = rightLink(step.col, this_col, step.row)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                             }
                         }
                         if (!linked){
@@ -503,12 +508,13 @@
                                 if (step.status == 1) break
                                 var row_col = step.row+","+step.col
                                 steps.push(row_col)
-                                console.log(steps)
                                 //(begin_col, end_col, fixed_row)
                                 linked = leftLink(step.col, this_col, step.row)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                                 linked = rightLink(step.col, this_col, step.row)
-                                if (linked) break
+                                if (linked) {console.log(steps)
+                                break}
                             }
                         }
                     }
