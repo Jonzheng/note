@@ -52,6 +52,8 @@
 
                 $("#box-his").click(function(){
                     $("#mm").toggleClass("fade-in")
+                    $("#sub").toggleClass("step-on")
+                    $("#sub").toggleClass("step-off")
                 })
 
 
@@ -633,7 +635,7 @@
         </div>
         <hr>
         <div id="bar" class="bar"> </div>
-            <button id="sub" class="btn btn-sm btn-default">||</button>
+            <button id="sub" class="btn btn-sm btn-default step-on">||</button>
             <button id="plus" class="btn btn-sm btn-default">>></button>
         <div>
         <hr>
@@ -679,6 +681,39 @@
 
 <!-- 子元素z-index 高于父元素 z-index; 不可能-->
     <style type="text/css">
+
+.step-on{
+    animation: ke-on 0.3s ease-in;
+}
+
+.step-off{
+    animation: ke-off 0.3s ease-in;
+}
+
+@keyframes ke-on{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes ke-off{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 
 .box-link-line{
     display: flex;
