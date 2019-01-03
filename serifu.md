@@ -146,3 +146,180 @@ ore mo konokurai naraba
 
 
 ---
+##八岐大蛇
+
+式神录:
+巫()女()たちの歌()声()が聞()こえるか
+能听到巫女们的歌声吗
+miko tachi no utagoe ga kikoeru ka
+
+式神录:
+桜()の花()が、少()し違()って見()えるな
+樱花看起来稍微有些不同呢
+sakura no hana ga, sukoshi chigatte mieru na
+
+点击(腿部):
+ふん、人間()とは、おもしろい生()き物()だ
+哼，人类真是有趣的生物
+fun, ningen towa, omoshiroi ikimono da
+
+对晴明:
+心()が揺()れただろう？晴明
+你的内心有所动摇了吧，晴明？
+kokoro ga yureta darou, seimei
+
+对神乐:
+不()屈()の魂()か？いいぞ
+不屈之魂吗？很好
+fukutsu no tamashii ka, ii zo
+
+对博雅:
+恐()れを知()らない人間()だと？
+你就是不知何谓恐惧的人类？
+osore wo shiranai ningen da to
+
+对比丘尼:
+占()い師()、お前()の願()いを知()っている
+占卜师，我知道你的愿望
+uranaishi, omae no negai wo shitteiru
+
+庭院:
+今日()の庭院()は賑()やかだな
+今天的庭院真热闹啊
+kyou no teiin wa nigiyaka da na
+
+出场:
+お前()も、あの儀()式()を行()うつもりか？
+你也想举行那个仪式吗？
+omae mo, ano gishiki wo okonau tsumori ka
+
+出场:
+人間()の命()は桜()の花()のように儚()い
+人类的生命如同樱花一般无常
+ningen no inochi wa sakura no hana no you ni hakanai
+
+出场:
+妖()怪()の清()らかな風()を感()じるか
+感受到阴界的清澈之风了吗？
+youkai no kiyorakana kaze wo kanjiru ka
+
+召唤:
+ついに、戻()ることができた
+我终于，回来了
+tsui ni, modoru koto ga dekita
+
+技能1:
+隙()あり！
+有破绽！
+suki ari
+
+技能2:
+私()の一()部()になれ！
+成为我的一部分吧！
+watashi no ichibu ni nare
+
+技能2:
+お前()もこの力()が欲()しいのか？
+你也渴望这份力量吗？
+omae mo kono chikara ga hoshii no ka
+
+技能2:
+漆()黑()の狭()間()を体()感()するがいい
+好好感受下这漆黑的间隙吧
+shikkoku no hazama wo taikan suru ga ii
+
+技能3:
+桜()のように散()りゆけ！
+如同樱花一般散落吧！
+sakura no you ni chiriyuke
+
+技能3:
+神()の怒()りの思()い知()れ！
+领会一下神的怒火！
+kami no ikari wo omoishire
+
+技能3:
+もう少()し楽()しませてくれ
+再让我好好消遣一番
+mou sukoshi tanoshimasete kure
+
+受击:
+ふん、おもしろい
+哼，有趣
+fun, omoshiroi
+
+死亡:
+終()わりは始()まり
+终结即为开始
+owari wa hajimari
+
+##雪女
+
+点击:
+涙(なみだ)？それは何(なん)だ、温(あたた)かいのか？
+眼泪？那是什么，温热的吗？
+namida, sore wa nan da, atatakai noka
+
+出场:
+氷(こおり)で閉(とざ)した心(こころ)に、鼓(こ)動(どう)などあるはずないだろう
+已经被冰雪封冻的心，又怎会有跳动呢
+koori de tozashita kokoro ni, kodou nado aru hazu nai darou
+
+技能3:
+行(い)け、氷(ひょう)雪(せつ)よ！
+去吧，冰雪！
+ike, hyousetsu yo
+
+技能3:
+吹(ふ)き荒(あ)らす氷(ひょう)晶(しょう)
+呼啸吧，冰晶(官方翻译)
+fukiarasu hyoushou
+
+##凤凰火
+
+点击:
+火()の中()で生()まれ変()わる鳳()凰()を見()た、美()しい
+我看到了浴火重生的凤凰，如此美丽
+hi no naka de umarekawaru houou wo mita, utsukushii
+
+出场:
+灰()になって散()りなさい
+变成灰消散吧
+hai ni natte chirinasai
+
+技能3:
+浄()化()の火()炎()
+净化的火焰
+jouka no kaen
+
+技能3:
+火()の海()に溺()れなさい！
+在火海中溺亡吧！
+hi no umi ni oborenasai
+
+##妖狐
+
+点击:
+仮()面()をつけた男()は信()用()ならないかね？
+你觉得带着面具的男人不可信吗？
+kamen wo tsuketa otoko wa shinyou naranai kane
+
+出场:
+荒()れ狂()う嵐()に、その身()を引()き裂()かれるがいい！
+就让这狂乱的风暴，割裂你的身躯！
+arekuruu arashi ni sono mi wo hikisakareru ga ii
+
+技能1:
+気()刃()！
+风刃！
+kijin
+
+技能3:
+月()刃()で
+月刃出击
+getsujin de
+
+技能3:
+踊()れ！荒()れ狂()う嵐()の中()で
+舞动吧！在这狂乱的风暴中
+odore, arekuruu arashi no naka de
