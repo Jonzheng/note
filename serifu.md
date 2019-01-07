@@ -293,6 +293,87 @@ fun, omoshiroi
 终结即为开始
 owari wa hajimari
 
+
+##山风
+
+点击:
+俺(おれ)に近(ちか)づくと、棘(とげ)が刺(さ)さるぞ
+靠近我的话，会被刺到哦
+ore ni chikazuku to, toge ga sasaru zo
+
+点击:
+暖(あたた)かいな
+好温暖啊
+atatakai na
+
+出场:
+森(もり)は、俺(おれ)の故(ふる)郷(さと)なんだ
+森林，就是我的故乡
+mori wa, ore no furusato nanda
+
+技能1:
+また血(ち)で刀(かたな)を汚(けが)してしまう
+我的刀又被血弄脏了
+mata chi de katana wo kegashite shimau
+
+技能3:
+ついに復(ふく)讐(しゅう)のときだ！
+终于到了复仇之时！(官方翻译)
+tsuini fukushuu no toki da
+
+技能3:
+これですべてが終(お)わる
+这样一切就能结束了
+kore de subete ga owaru
+
+技能3:
+森(もり)の王(おう)は、この俺(おれ)だ！
+我就是森林之王！(官方翻译)
+mori no ou wa, kono ore da
+
+技能3:
+ふん、戦(たたか)いには慣(な)れてる
+哼，我早已习惯战斗了
+fun, tatakai niwa nareteru
+
+受击:
+ここで倒(たお)れはしない
+我还不能在这里倒下
+koko de taore wa shinai
+
+
+##小鹿男
+点击:
+一(いち)族(ぞく)の喜(よろこ)びも悲(かな)しみも、みんな僕(ぼく)が背(せ)負(お)っているんだ！
+我们一族的喜悲，全部靠我来背负！
+ichizoku no yorokobi mo kanashimi mo, minna boku ga seotteirun da
+
+点击:
+地(じ)獄(ご)のような日(ひ)日(び)が、この体(からだ)と心(こころ)を鍛(きた)えてくれた
+曾经地狱一般的日子，磨炼了我的身体与心灵
+jigoku no youna hibi ga, kono karada to kokoro wo kitaete kureta
+
+出场:
+僕(ぼく)は負(ま)けない！
+我不会输！
+boku wa makenai
+
+技能3:
+鹿人(しかびと)は奴(ど)隷(れい)じゃない
+鹿人永不为奴！
+shikabito wa dorei janai
+
+技能3:
+この角(つの)に貫(つらぬ)けぬものはない
+我的角无往不利！(官方翻译)
+kono tsuno ni tsuranukenu mono wa nai
+
+技能3:
+僕(ぼく)たちの故(こ)郷(きょう)を守(まも)るんだ
+我要守护我们的故乡！
+bokutachi no kokyou wo mamorun da
+
+
 ##雪女
 
 点击:
