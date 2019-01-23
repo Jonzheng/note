@@ -254,7 +254,7 @@ tsui ni, modoru koto ga dekita
 suki ari
 
 技能2:
-私()の一()部()になれ！
+私(わたし)の一()部()になれ！
 成为我的一部分吧！
 watashi no ichibu ni nare
 
@@ -975,3 +975,421 @@ kono mama zutto mezamenai de
 これも仕(し)方(かた)のないことね
 这也是没有办法的事呢
 kore mo shikata no nai koto ne
+
+
+#呱太
+
+##彼岸花呱 CV：松井晓波
+
+点击:
+あら、また一人(ほとり)わたしの花(はな)泥(どろ)になるおつもりね？
+哎呀，又有一个人想成为我的花泥了吗？
+ara, mata hitori watashi no hanadoro ni naru otsumori ne
+
+出场:
+私(わたし)の花(なな)泥(どろ)…あ！顔(かお)が痛(いた)いよ…
+成为我的花泥…(脸着地)啊！脸好痛……
+watashi no hanadoro, kao ga itai yo
+
+受击:
+いい度(ど)胸(きょう)ね
+胆子不小呢
+ii dokyou ne
+
+技能:
+あなたが見(み)る世(せ)界(かい)は現(げん)実(じつ)かしら？
+你所看到的世界是否是现实？
+anata ga miru sekai wa genjitsu kashira
+
+技能:
+彼(ひ)岸(がん)花(ばな)の幻(げん)影(えい)に耽(ふけ)るがいい！
+沉湎在彼岸花的幻影中吧！
+higanbana no gen'ei ni fukeru ga ii
+
+
+##茨木呱 CV：安部壮一
+
+点击:
+私(わたし)の風(ふう)船(せん)…え、じゃなかった、私(わたし)の気(き)を感(かん)じよう
+见识下我的气球…呃，不对，见识下我的气势吧！
+watashi no fuusen, ja nakatta, watashi no ki wo kanjiyou
+
+出场:
+おおっと、着(ちゃく)地(ち)成(せい)功(こう)！
+哎哟…着陆成功！
+ootto, chakuti seikou
+
+受击:
+必(かなら)ず復(ふく)讐(しゅう)する
+我一定会复仇
+kanarazu fukushuu suru
+
+技能:
+我(わ)が豪(ごう)拳(けん)、味(あじ)わうがいい！
+好好体会，吾之豪拳！
+waga gouken, ajiwau ga ii
+
+技能:
+驚(きょう)嘆(たん)せよ、私(わたし)の強(つよ)さに
+为我的强大惊叹吧
+kyoutan seyo, watashi no tsuyosa ni
+
+
+##大天狗呱 CV：君嶋哲
+
+点击:
+かっこい姿(すがた)を保(たも)つには、骨(ほね)が折(お)れる
+保持帅气的形象真是太累人了
+kakkoi sugata wo tamotsu niwa, hone ga oreru
+
+出场:
+我(わ)が風(かぜ)を思(おも)い知(し)れ…やれやれ(ゲロゲロ)、風(かぜ)が強(つよ)すぎた
+感受我的暴风…哎呀哎呀(呱呱)，风太大了
+waga kaze wo omoishire, yareyare (gerogero), kaze ga tsuyo sugita
+
+受击:
+よくも我(われ)のかっこい顔(かお)を傷(きず)つけようなどと
+竟敢伤害我这帅气的脸
+yokumo ware no kakkoi kao wo kizutsukeyou nado to
+
+技能:
+風(かぜ)よ、我(わ)が命(めい)に従(したが)え！
+风啊，听我命令！
+kaze yo, waga mei ni shitagae
+
+技能:
+暴(ぼう)風(ふう)を支(し)配(はい)する我(わ)が力(ちから)を見(み)よう
+让你见识一下我支配暴风的力量
+boufuu wo shihai suru waga chikara wo miyou
+
+
+##荒呱 CV：岩崎了
+
+点击:
+滅(ほろ)び…これこそ都(みやこ)の运(うん)命(めい)だ！
+毁灭…即是京都的命运！
+horobi, kore koso miyako no unmei da
+
+出场:
+私(わたし)こそ、天(てん)命(めい)を授(さず)かる者(もの)
+我，才是被赐予天命之人
+watashi koso, tenmei wo sazukaru mono
+
+受击:
+ふん、つまらん抵(てい)抗(こう)だな
+哼，无聊的抵抗
+fun, tsumaran teikou da na
+
+技能:
+私(わたし)の足(あし)元(もと)にひれ伏(ふ)せ！
+拜倒在我的脚边吧！
+watashi no ashimoto ni hirefuse
+
+技能:
+ちっぽけな自(じ)分(ぶん)の存(そん)在(ざい)に気(き)付(きず)け！
+感受到自己的渺小吧！(官方翻译)
+chippoke na jibun no sonzai ni kizuke
+
+
+##荒川呱 CV：寸石和弘
+
+点击:
+ゲロ…この服(ふく)本(ほん)当(とう)に熱(あつ)いな
+呱…这衣服真的好热啊
+gero, kono fuku hontou ni atsui na
+
+出场:
+お前(まえ)今(いま)の見(み)てなかったのな
+(摔)你刚才什么都没看见对吧
+omae imano mite nakatta no na
+
+受击:
+ふん、死(し)にたいのか
+哼，你想死吗
+fun, shinitai no ka
+
+技能:
+飲(の)み込(こ)まれるがいい！
+就这样被吞噬吧！
+nomikomareru ga ii
+
+技能:
+深(ふか)き闇(やみ)の水(すい)流(りゅう)！
+黑暗深处的水流！
+fukaki yami no suiryuu
+
+
+##花鸟卷呱 CV：近藤唯
+
+点击：
+本(ほん)物(もの)の花(か)鳥(ちょう)風(ふう)月(げつ)のように、綺(き)麗(れい)になれたらいいのに…ゲロ
+如果我能像真正的花鸟卷那样漂亮就好了…呱
+honmono no kachoufuugetsu no you ni, kirei ni naretara ii no ni, gero
+
+出场：
+あらら、ちゃんとお上(じょう)品(ひん)でいなきゃ
+哎呀呀，必须表现得淑女一点才行
+arara, chanto ojouhin de inakya
+
+受击：
+やめて
+快停下
+yamete
+
+技能：
+飛(と)べ、わたくしの小(こ)鳥(とり)たちよ！
+飞翔吧，我的小鸟们！(官方翻译)
+tobe, watakushi no kotori tachi yo
+
+技能：
+ここはわたくしに任(もか)せて、心(しん)配(ぱい)ご無(む)用(よう)です
+这里交给我，没必要担心(官方翻译)
+koko wa watakushi ni makasete, shinpai gomuyou desu
+
+
+##辉夜姬呱 CV：池田海咲
+
+点击:
+私(わたし)は偽(にせ)の輝(かぐ)夜(や)姫(ひめ)でも、この努(ど)力(りょく)は本(ほん)物(もの)よ
+虽然我是假的辉夜姬，但我的努力可是真的
+watashi wa nise no kaguyahime demo, kono doryoku wa honmono yo
+
+出场:
+ふらふらしちゃう、痛(いた)い
+有点站不稳了…(摔)啊，好痛…
+furafura shichau, itai
+
+受击:
+いた
+好痛
+ita
+
+技能:
+みんな、私(わたし)と一(いっ)緒(しょに)にお月(つき)見(み)しようよ
+各位，和我一起赏月吧
+minna, watashi to isshoni otsukimi shiyou yo
+
+技能:
+月(つき)の光(ひかり)よ、我(われ)らを照(て)らしたまえ
+温柔的月光啊，请照亮我们(官方翻译)
+tsuki no hikari yo, warera wo terashitamae
+
+
+##酒吞呱 CV：大泊貴揮
+
+点击:
+俺(おれ)様(さま)の髪(かみ)を弄(いじ)るな！
+别玩本大爷的头发！
+oresama no kami wo ijiruna
+
+出场:
+酒(さけ)の匂(にお)いが…あ、俺(おれ)様(さま)を呼(よ)んでいる
+酒的气味…(摔)在呼唤本大爷！
+sake no nioi ga, oresama wo yondeiru
+
+受击:
+ふん、覚(おぼ)えてろ
+哼，你给我记住
+fun, oboetero
+
+技能:
+もっと、もっと強(つよ)くなるぜ！
+更强，本大爷还会变得更强！(官方翻译)
+motto, motto tsuyoku naru ze
+
+技能:
+血(ち)が…もっと血(ち)を飲(の)ませろ！
+血…本大爷还要更多的血！
+chi ga... motto chi wo nomasero
+
+##两面佛呱 CV：宫本誉之
+
+点击:
+正(せい)義(ぎ)の風(かぜ)！
+正义之风！
+seigi no kaze
+
+点击:
+勇(ゆう)気(き)の雷(いかずち)！
+勇气之雷！
+yuuki no ikazuchi
+
+点击:
+俺(おれ)たちは正(せいい)義(ぎ)と勇(ゆう)気(き)を司(つかさど)る両(りょう)面(めん)仏(ぼとけ)だ！
+我们就是掌管正义与勇气的两面佛！
+oretachi wa seigi to yuuki wo tsukasadoru ryoumen-botoke da
+
+出场:
+俺(おれ)たち、息(いき)ぴったり
+我们两个，非常合拍！
+oretachi, iki pittari
+
+受击:
+絶(ぜっ)対(たい)に許(ゆる)すな
+绝不饶恕
+zettai ni yurusuna
+
+技能:
+これを喰(く)らえ！
+尝尝这招！
+kore wo kurae
+
+技能:
+これも！
+还有这招！
+kore mo
+
+技能:
+神(しん)罪(ざい)の連(れん)撃(げき)！
+神罪连击！
+shinzai no rengeki
+
+
+##青行灯呱 CV：渡边优里奈
+
+点击:
+一(ほと)晩(ばん)中(ちゅう)怪(かい)談(だん)を話(はな)したが、そして全(すべ)ての灯(とも)火(しび)が消(き)えた後(あと)、またよ、眠(ねむ)った…ゲロ
+讲了一晚上鬼怪故事，而所有的灯光熄灭之后，我就又，睡着了…(持续10s的鼾声)呱
+hitobanchuu kaidan wo hanashita ga, soshite subete no tomoshibi ga kieta ato, mata yo, nemutta, gero
+
+出场:
+行(あん)灯(どう)…あ！あたい、何(なに)を言(い)うとしてたんだっけ
+行灯…(摔)我刚才想说什么来着
+andou, atai, nani wo iu toshitetan dakke
+
+受击:
+あんた、やるわね
+你还真敢下手
+anta, yaru wane
+
+技能:
+誰(だれ)の魂(たましい)にも、物(もの)語(がたり)が眠(ねむ)ってるんだよ
+所有人的灵魂里，都沉睡着故事
+dare no tamashii nimo, monogatari ga nemutterun da yo
+
+技能:
+ほら、こうすれば楽(らく)になるだろう
+呵，这样你就能解脱了呢(官方翻译)
+hora, kou sureba raku ni naru darou
+
+
+##小鹿男呱 CV：弓原健史
+
+点击:
+今(こん)回(かい)お見(み)せする踊(おど)りは
+这次要表演的舞蹈是——
+konkai omise suru odori wa
+
+点击:
+踊(おど)り？そんなの聞(き)いてないよ！
+舞蹈？我怎么没听过这事！
+odori, sonna no kiitenai yo
+
+出场:
+早(はや)く早(はや)く、そろそろ出(で)番(ばん)だぜ
+快点快点，该我们出场了
+hayaku hayaku, sorosoro deban da ze
+
+出场:
+はいはい、そう急(せ)かすなよ
+好好，别催我嘛
+haihai, sou sekasuna yo
+
+受击:
+もう、いじめないでくれよ
+真是的，别再欺负我们了
+mou, ijimenaide kure yo
+
+技能:
+この角(つの)に貫(つらぬ)けぬものはない
+我的角无往不利！(官方翻译)
+kono tsuno ni tsuranukenu mono wa nai
+
+技能:
+僕(ぼく)たちの故(こ)郷(きょう)を守(まも)るんだ
+我要守护我们的故乡！
+bokutachi no kokyou wo mamorun da
+
+
+##妖刀姬呱 CV：羽饲真梨
+
+点击:
+ゲロ…この刀、本(ほん)当(とう)に重(おも)い
+呱…这把刀真的好重
+gero, kono katana, hontou ni omoi
+
+出场:
+あ！恥(は)ずかしい…見(み)、見(み)ないでよ
+(摔)好难为情…不，不准看！
+hazukashii, mi, minaide yo
+
+受击:
+近(ちか)づくな
+别靠近我！
+chikazukuna
+
+技能:
+斬(ざん)せよ！
+斩吧！
+zan seyo
+
+技能:
+邪(じゃ)魔(ま)するなら、みんな死(し)んで！
+挡道的话，就都去死吧！
+jama suru nara, minna shinde
+
+##阎魔呱 CV：有贺由树子
+
+点击:
+この神(み)輿(こし)、油(ゆ)断(だん)してると落(お)ちてしまうわ…ああ！
+这个神舆 (明明只是个小推车) ，一不小心的话就会掉下去…啊！
+kono mikoshi, yudan shiteru to ochite shimau wa
+
+出场:
+緊(きん)急(きゅう)ブレーキ！完(かん)璧(ぺき)よ
+紧急刹车！…完美
+kinkyuu bure-ki, kanpeki yo
+
+受击:
+妾(わらわ)に刃(は)向(む)かうとは
+想反抗我吗
+warawa ni hamukau towa
+
+技能2:
+おいでなさい！
+来吧！
+oidenasai
+
+技能2:
+妾(わらわ)に屈(くっ)服(ぷく)せよ！
+屈服于我！
+warawa ni kuppuku seyo
+
+
+##一目连呱 CV：滨野大辉
+
+点击:
+我(われ)はもはや風(ふう)神(じん)ではない、我(われ)は…蛙(かえる)だ！ゲロゲロ
+我已不再是风神，我是…青蛙！呱呱
+--你以为是风神？其实是我青蛙哒！ 
+ware wa mohaya fuujin dewanai, ware wa kaeru da, gerogero
+
+出场:
+困(こま)ったときはいつでも呼(よ)んでくれ
+有烦恼的话随时叫我
+komatta toki wa itsudemo yonde kure
+
+受击:
+無(ぶ)事(じ)だ
+我没事
+buji da
+
+技能:
+恐(おそ)れることはない
+没什么好怕的
+osoreru koto wa nai
+
+技能:
+竜(りゅう)よ、出(い)でよ、その力(ちから)を我(われ)に！
+龙啊，现身吧，将你的力量赋予我！
+ryuu yo, ideyo, sono chikara wo ware ni
