@@ -817,6 +817,243 @@ anata no subete wo iyashimasu yo
 fukkatsu no harukaze
 
 
+##匣中少女/匣の少女(はこのしょうじょ)/Hako no shoujo CV：小清水亜美
+
+点击:
+あたしの箱(はこ)の中(なか)にはね、綺(き)麗(れい)な宝(たから)物(もの)がたくさんあるの
+我的箱子里啊，可是有很多漂亮的宝物呢
+atashi no hako no naka niwa ne, kirei na takaramono ga takusan aru no
+
+出场:
+あたしの一(いち)番(ばん)大(たい)切(せつ)なお友(とも)達(だち)、会(あ)いに来(き)たわよ
+我来见你了，我最重要的朋友啊
+atashi no ichiban taisetsu na o-tomodachi, ai ni kita wayo
+
+技能1:
+触(さわ)らないで
+别碰我
+sawaranai de
+
+技能3:
+いつだって女(おんな)の子(こ)は可(か)愛(わい)くなきゃ
+女孩子要随时保持可爱才行
+itsudatte onna no ko wa kawaikunakya
+
+技能3:
+この世(よ)で一(いち)番(ばん)大(たい)切(せつ)な人(ひと)は、あなたよ
+我在这世上最重要的人，就是你哦
+kono yo de ichiban taisetsu na hito wa, anata yo
+
+技能3:
+あなたをそんな姿(すがた)にしたやつは誰(だれ)？
+把你弄成这个样子的，是谁？
+anata wo sonna sugata ni shita yatsu wa dare
+
+技能3:
+大(だい)丈(じょう)夫(ぶ)、あたしが仕(し)返(かえ)ししてあげるから
+没关系，我会为你报仇的
+daijoubu, atashi ga shikaeshi shite ageru kara
+
+受击:
+手(て)加(か)減(げん)してくれないのね
+你还真是不知轻重呢
+tekagen shite kurenai no ne
+
+受击:
+忘(わす)れないから
+我不会忘记的
+wasurenai kara
+
+
+##小松丸(こまつまる)/Komatsumaru CV：茅野愛衣
+
+点击:
+森(もり)のアイドル小(こ)松(もつ)丸(まる)って、あたしのことだよ
+森林的 爱抖露 偶像小松丸，就是我啦~
+mori no aidoru komatsumaru tte, atashi no koto da yo
+
+出场:
+ラララ～妖(よう)怪(かい)の森(もり)へようこそ
+啦啦啦~欢迎来到妖精的森林
+rarara~ youkai no mori e youkoso
+
+技能1:
+松(もつ)ぼっくり喰(く)らえ！
+尝尝松果吧！
+matsubokkuri kurae
+
+技能2:
+今(こん)度(ど)はどうしようもないでしょう？ふん！
+这次你没办法了吧？哼！
+kondo wa dou shiyou mo nai deshou, fun
+
+技能2:
+よくも松(まつ)ぼっくりを奪(うば)ったな！
+居然敢抢走我的松果！
+yokumo matsubokkuri wo ubatta na
+
+技能3:
+へい、当(あ)たらないよ
+嘿，你是打不中我的
+hei, ataranai yo
+
+技能3:
+松(まつ)ぼっくりあげるから殴(なぐ)らないで！
+我把松果给你，不要打我！
+matsubokkuri ageru kara naguranai de
+
+受击:
+耳(みみ)が痛(いた)い
+耳朵好痛
+mimi ga itai
+
+
+##百目鬼(どうめき)/Doumeki CV：日高里菜
+
+点击:
+悪(わる)い人(りん)間(げん)しか嘘(うそ)はつきません
+我只对坏人说谎
+warui ningen shika uso wa tsukimasen
+
+出场:
+勝(しょう)利(り)の兆(きざ)しは見(み)えてきました
+我已经看见了胜利的预兆
+shouri no kizashi wa mietekimashita
+
+技能1:
+あなたの動(うご)き、全(すべ)てお見(み)通(とお)しです
+你的动作已经全部被我看穿了
+anata no ugoki, subete omitooshi desu
+
+技能3:
+あなたの心(こころ)の声(こえ)が聞(き)こえてきます
+我能听到你内心的声音
+anata no kokoro no koe ga kikoetekimasu
+
+技能3:
+何(なに)を考(かんが)えているのか見(み)せてもらいましょう
+让我瞧瞧你正在想些什么
+nani wo kangaeteiru noka misete moraimashou
+
+受击:
+この恨(うら)み、必(かなら)ず晴(は)らします
+这个仇，我一定会报
+kono urami, kanarazu harashimasu
+
+死亡:
+この結(けつ)末(まつ)…見(み)えなかった
+不曾预见…这种结局
+kono ketsumatsu, mienakatta
+
+
+##猫掌柜 CV：堀江由衣
+
+点击:
+わしの店(みせ)は、毎(まい)日(にち)朝(あさ)から晩(ばん)まで忙(いそが)しいのじゃ
+俺的小店，可是从早到晚一直很忙
+washi no mise wa, mainichi asa kara ban made isogashii no ja
+
+点击:
+わしの店(みせ)は、わしの宝(たから)じゃ
+俺的小店，就是俺的宝物
+washi no mise wa, washi no takara ja
+
+出场:
+こら、お前(まえ)ら、喧(けん)嘩(か)はやめ！
+喂，你们几个，不准打架！
+kora, omaera, kenka wa yame
+
+技能1:
+わしの腕(うで)っぷしを見(み)せてやろ！
+让你见识见识俺的腕力！
+washi no udeppushi wo misete yaro
+
+技能3:
+わしらの縄(なわ)張(ば)りで騒(さわ)ぎを起(お)こすとは、いい度(ど)胸(きょう)じゃ
+竟敢在俺们的地盘引起骚动，你胆子很大嘛
+washira no nawabari de sawagi wo okosu towa, ii dokyou ja
+
+技能3:
+この無(ぶ)礼(れい)者(もの)、ここから出(で)ていけ！
+无礼之徒，从俺这里滚出去！
+kono bureimono, koko kara deteike
+
+受击:
+おや、失(しつ)礼(れい)な奴(やつ)め
+哦呀，真是个没礼貌的家伙
+oya, shitsurei na yatsume
+
+
+##犬神(いぬがみ)/Inugami CV：関俊彦
+
+点击:
+心(こころ)の有(あ)り様(よう)が、剣(けん)には現(あらわ)れるのだ
+心之所想，剑之所向
+kokoro no ariyou ga, ken niwa arawareru no da
+
+出场:
+剣(けん)に躊(ため)躇(ら)いは禁(きん)物(もつ)だ、いくぞ！
+剑术中踌躇乃大忌，上！
+ken ni tamerai wa kinmotsu da, iku zo
+
+技能1:
+抜(ばっ)刀(とう)！
+拔刀！
+battou
+
+技能3:
+心(し)剣(けん)乱(らん)舞(ぶ)
+心剑乱舞
+shinken-ranbu
+
+技能3:
+剣(けん)よ、心(こころ)のままに
+剑随心至！
+ken yo, kokoro no mama ni
+
+##清姬/清姫(きよひめ)/Kiyohime CV：行成桃姬
+
+点击:
+なぜ、あたしはこんな姿(すがた)に
+为什么，我会变成这种模样
+naze, atashi wa konna sugata ni
+
+点击:
+貴(き)様(さま)にも愛(あい)ゆえの苦(くる)しみ、教(おし)えてやろ
+让我来教教你爱所带来的苦痛
+kisama nimo ai yue no kurushimi, oshiete yaro
+
+出场:
+憎(にく)き裏(うら)切(ぎ)り者(もの)、ここにいたか
+可憎的背叛者，你在这里吗
+nikuki uragiri mono, koko ni ita ka
+
+技能2:
+あたしから逃(のが)れられはしない
+你，休想从我这儿逃掉(官方翻译)
+atashi kara nogarerare wa shinai
+
+技能2:
+愛(あい)と毒(どく)の賛(さん)歌(か)
+爱与毒的赞歌
+ai to doku no sanka
+
+技能3:
+貴(き)様(さま)も愛(あい)に狂(くる)うの
+你也为爱发狂吧
+kisama mo ai ni kuruu no
+
+技能3:
+蛇(じゃ)の道(みち)は蛇(へび)
+蛇知蛇道(注:日本谚语，比喻人能很容易地推测出同类所做的事)
+ja no michi wa hebi
+
+受击:
+この痛(いた)み、悪(わる)くない
+这份痛楚，不算坏事
+kono itami, warukunai
+
+
 
 ---
 
