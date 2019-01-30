@@ -374,6 +374,54 @@ kono tsuno ni tsuranukenu mono wa nai
 bokutachi no kokyou wo mamorun da
 
 
+##白藏主 CV：小林大纪
+
+点击:
+人(にん)間(げん)は何(なに)を考(かんが)えているのでしょうか
+人类在想些什么呢
+ningen wa nani wo kangaeteiru no deshou ka
+
+点击:
+晴(せい)明(めい)様(さま)は小白(こはく)を裏(うら)切(ぎ)ったりしません、そうですよね
+晴明大人不会背叛小白的，对吧
+seimei-sama wa kohaku wo uragittari shimasen, sou desu yone
+
+点击:
+では約(やく)束(そく)します、僕(ぼく)はずっとそばにいます
+那么约好了，我会永远在你身边
+dewa yakusoku shimasu, boku wa zutto soba ni imasu
+
+出场:
+危(あぶ)ない目(め)にあったのですね
+你遇到危险了呢
+abunai me ni atta no desu ne
+
+出场:
+誰(だれ)にも晴(せい)明(めい)様(さま)を傷(きず)つけさせません
+我不会让任何人伤害晴明大人
+dare nimo seimei-sama wo kizutsuke sasemasen
+
+技能1:
+小白(こはく)は逃(に)げません
+我是不会逃避的(官译)
+kohaku wa nigemasen
+
+技能3:
+小白(こはく)がいる限(かぎ)り、大(だい)丈(じょう)夫(ぶ)です！
+有小白在，不会有事的！(官译)
+kohaku ga iru kagiri, daijoubu desu
+
+技能3:
+みんなを傷(き)つけないでください！
+不准伤害大家！(官译)
+minna wo kizutsukenaide kudasai
+
+受击:
+痛(いた)っ！
+好痛！
+ita
+
+
 ##雪女
 
 点击:
