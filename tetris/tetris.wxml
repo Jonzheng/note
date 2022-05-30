@@ -1,0 +1,59 @@
+<view class="box">
+  <canvas type="2d" id="canvas2d" style="height:{{cvHeight+20}}px;width:{{cvWidth+160}}px;"></canvas>
+</view>
+<view class="box-btns">
+  <view class="btn-fixed">
+    <view class="btn-restart" capture-bind:longpress="startGame">
+      <view class="it"></view>
+      <text>长按重玩</text>
+    </view>
+  </view>
+  <view class="btns">
+    <view class="btn-direction">
+      <view class="item" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="up" data-val="1">
+      <view class="inner">
+        <text class="p-v">逆转</text>
+      </view>
+      </view>
+      <view class="item" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="right">
+        <view class="inner">
+          <text class="p-t">右</text>
+        </view>
+      </view>
+      <view class="item item-d" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="left">
+        <view class="inner">
+          <text class="p-t">左</text>
+        </view>
+      </view>
+      <view class="item item-d" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="down">
+        <view class="inner">
+          <text class="p-t">软落</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btns">
+    <view class="btn-direction">
+      <view class="item" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="hold">
+        <view class="inner">
+          <text class="p-v">Hold</text>
+        </view>
+      </view>
+      <view class="item" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="rotate" data-val="1">
+        <view class="inner">
+        <text class="p-t">顺转</text>
+      </view>
+      </view>
+      <view class="item item-d" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="rotate" data-val="2">
+        <view class="inner">
+          <text class="p-t">旋转</text>
+        </view>
+      </view>
+      <view class="item item-d" hover-class="i-hover" catchtouchstart="directionPress" catchtouchend="directionEnd" data-direction="dropHard">
+        <view class="inner">
+          <text class="p-t">硬落</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

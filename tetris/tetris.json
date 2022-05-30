@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "Tetris",
+  "disableScroll": true,
+  "enablePullDownRefresh": false,
+  "usingComponents": {}
+
+}

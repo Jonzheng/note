@@ -1,0 +1,129 @@
+
+page{
+  background: #89839F;
+}
+.box{
+    width: 750rpx;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60rpx;
+    width: 750rpx;
+    color: #808080;
+    font-size: 34rpx;
+    font-weight: bold;
+  }
+
+  #canvas2d{
+    margin: 20rpx;
+  }
+
+  .box-btns{
+    position: relative;
+    margin-top: 60rpx;
+    display: flex;
+    align-items: center;
+    width: 710rpx;
+  }
+  .box-btns .btn-fixed{
+    position: absolute;
+    top: -60rpx;
+    left: 16rpx;
+  }
+  .box-btns .btn-fixed .btn-restart .it{
+    box-shadow: -1px 1px 3px #cdcdcd73 inset;
+    width: 68rpx;
+    height: 28rpx;
+    border-radius: 6rpx;
+  }
+  .box-btns .btn-fixed .btn-restart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 72rpx;
+    height: 32rpx;
+    border-radius: 8rpx;
+    background: #314571;
+    box-shadow: 0 0 6px #314571 inset, 0 1px 8px #314571;
+  }
+  .box-btns .btn-fixed .btn-restart text{
+    position: absolute;
+    left: 0; top: 40rpx;
+    width: 120rpx;
+    color: #555555;
+    font-size: 20rpx;
+    font-weight: bold;
+  }
+  .box-btns .btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 370rpx;
+  }
+  .box-btns .btn-direction{
+    margin-left: 30rpx;
+    display: flex;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+    width: 260rpx;
+    height: 260rpx;
+    justify-content: space-between;
+  }
+  .box-btns .btn-direction .item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120rpx;
+    height: 120rpx;
+    background: #314571;
+    box-shadow: 0 1px 8px #314571 inset, 0 1px 8px #314571;
+    border-radius: 50%;
+  }
+  .box-btns .btn-direction .i-hover{
+    box-shadow: 0 1px 2px #89839F inset, 0 1px 2px #89839F;
+  }
+  .box-btns .btn-direction .item-d{
+    margin-top: 20rpx;
+  }
+  .box-btns .btn-right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 370rpx;
+  }
+  .box-btns .item .inner{
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-45deg);
+    width: 110rpx;
+    height: 110rpx;
+    border-radius: 50%;
+    box-shadow: -1px 1px 6px #cdcdcd inset;
+  }
+  .box-btns .item .inner text{
+    color: #555555;
+    font-size: 22rpx;
+    font-weight: bold;
+  }
+  .box-btns .item .inner .p-v{
+    position: relative;
+    top: -36rpx;
+    left: 88rpx;
+  }
+  .box-btns .item .inner .p-t{
+    position: relative;
+    top: 80rpx;
+  }
+  .font-loaded {
+    position: relative;
+    z-index: 99;
+    font-family: "let-go-digital";
+  }

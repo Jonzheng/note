@@ -1,0 +1,4 @@
+<view class="title">Canvas2D Demo</view>
+<view class="canvasWrap"><canvas type="2d" id='posterCanvas' style="width: 650px;height: 850px;"></canvas></view>
+<view class="download" catch:tap="saveImg">保存到相册</view>
+<image src="{{tempHeader}}"></image>
